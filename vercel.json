@@ -2,7 +2,7 @@
     "version": 2,
     "name": "BookMyMovie",
     "builds": [
-        {"src": "app.js.js", "use": "@vercel/node"}
+        {"src": "app.js", "use": "@vercel/node"}
     ],
     "routes": [
         {"src": "/(.*)", "dest": "/app.js"}
