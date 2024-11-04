@@ -18,6 +18,10 @@ app.use("/admin", adminRouter);
 app.use("/movie", movieRouter);
 app.use("/booking", bookingsRouter);
 
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
 mongoose
   .connect(
     process.env.MONGO_URL
